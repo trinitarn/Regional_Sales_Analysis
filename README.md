@@ -14,40 +14,65 @@ State Regions: Auxiliary mapping (less relevant to final analysis).
 Products: Mapping of product descriptions.
 2017 Budgets: Sales budget per product for 2017.
 
-## 📈 Insight Summary
-Top Performing Products: Identified based on total sales and margin.
-Channel Breakdown: Wholesale dominates sales volume; however, export channels offer higher margins.
-Customer Insights: Sales are highly concentrated in a few major customers.
-Budget Comparison: Several products significantly under- or over-performed against 2017 targets.
-Regional Heatmap: Geospatial mapping shows highest demand clusters in populous and high-income regions.
-
-## 💡 Recommendations
-Optimize Inventory: Focus on high-margin, high-turnover products.
-Channel Strategy: Strengthen high-margin channels such as export.
-Customer Diversification: Reduce dependency on a few key clients.
-Budget Recalibration: Adjust 2018 forecasts based on historical performance and trend patterns.
-
-## 📊 Power BI Dashboard Insights
-The dashboard is structured with:
-Product Performance Page: Top 10 products by revenue, comparison with budget.
-Regional Sales Map: Visual breakdown of sales by delivery region.
-Customer Contribution: Pareto analysis of top customers.
-Monthly Trend: Sales volume and value trends across time.
-Channel Efficiency: Channel-based revenue and margin comparisons.
-
-### 📊 Power BI Dashboard Preview
+## 📊 Power BI Dashboard Preview
 
 #### 🔸 State Performance
 ![State Performance](https://github.com/trinitarn/Regional_Sales_Analysis/blob/main/Screenshot%20State.png)
+##### Top 5 states by total revenue:
 
+California leads significantly with over $220 million in revenue.
+
+Followed by Illinois, Florida, Texas, and New York — each generating over $100M.
+
+These states are key markets and indicate regions where sales efforts are already yielding strong results.
+
+##### Monthly Revenue Trend:
+Peak revenue occurred in February, exceeding $125 millions
+A noticeable decline starts from April onwards, suggesting a seasonal trend or operational gap.
 
 #### 🔸 Product Performance
 ![Product Performance](https://github.com/trinitarn/Regional_Sales_Analysis/blob/main/Screenshot%20Product.png)
 
+##### Top Revenue-Generating Products:
+The bar chart shows that the top 5 products generate over $100M each, while the long tail of products sees significantly lower sales.
+These top products are potential flagships — focus inventory and promotions accordingly.
 
-#### 🔸 Customer Performance
-![Customer Performance](https://github.com/trinitarn/Regional_Sales_Analysis/blob/main/Screenshot%20Customer.png)
+##### Channel Breakdown:
+Wholesale is the largest channel (~54%), followed by Distributor (31%) and Export (15%).
+Export, while smallest, may offer higher margins per transaction and should be analyzed for strategic growth.
 
+##### Elastic vs Inelastic Product Analysis:
+Inelastic products (higher price & high demand): Strong performers like Product 11 and Product 13. These show strong unit economics — customers are willing to pay more and buy more.
+Elastic/substitutable products: Lower price and lower volume — e.g., Product 1, Product 10 — possibly underperforming due to commoditization.
+
+#### 🔸 Customer Analysis
+![Customer Analysis](https://github.com/trinitarn/Regional_Sales_Analysis/blob/main/Screenshot%20Customer.png)
+##### Customer Spend Distribution:
+The scatterplot of Customer Index vs Revenue reveals a Pareto trend: a small portion of customers (likely <20%) drive a majority of revenue.
+Many customers have low spend, indicating opportunities to either reactivate or refine targeting.
+
+##### Profit Contribution by Customer:
+Aibox Company is the top customer with over $4.9M in profit and $12.6M in revenue.
+Other major contributors: Aimbo Corp, Actavis Company, and Accord Group.
+
+##### RMF Table (Recency - Monetary - Frequency):
+This table evaluates:
+Sum of Profit
+Sum of Total Revenue
+Days Gap (Recency)
+For example:
+Aimbo Corp shows low recency (3.45 days) and high value, indicating strong loyalty.
+Accudial Company has higher recency (4.13) with solid returns, possibly needing more engagement.
+
+### Recommendation:
+1. Continue to invest in high-performing inelastic products.
+Reposition or market substitutable products more aggressively.
+2. Marketing Focus by Customer Type:
+Using scatterplots and customer-product matrices, we identified:
+Which customers consistently purchase inelastic products (high loyalty, less price sensitivity).
+Which customers lean towards substitutable goods — ideal targets for promotions or pricing strategies.
+3. Recommendations: Investigate Q2-Q3 dip and align campaigns with high-performance months.
+4. Use RMF to segment: reward loyal customers, re-engage at-risk ones, and promote upselling to profitable but infrequent buyers.
 
 ## 🔧 Tools & Skills Demonstrated
 Data Cleaning & Wrangling: Used Python (Pandas) to merge the innitial [dataset](https://github.com/trinitarn/Regional_Sales_Analysis/blob/main/Regional%20Sales%20Dataset.xlsx), clean keys, map references. You can see the code [here](https://github.com/trinitarn/Regional_Sales_Analysis/blob/main/Regional%20Sales%20Analysis.ipynb). 
