@@ -35,6 +35,20 @@ Customer Contribution: Pareto analysis of top customers.
 Monthly Trend: Sales volume and value trends across time.
 Channel Efficiency: Channel-based revenue and margin comparisons.
 
+### 📊 Power BI Dashboard Preview
+
+#### 🔸 State Performance
+![State Performance](https://github.com/trinitarn/Regional_Sales_Analysis/blob/main/Screenshot%20State.png)
+
+
+#### 🔸 Product Performance
+![Product Performance](https://github.com/trinitarn/Regional_Sales_Analysis/blob/main/Screenshot%20Product.png)
+
+
+#### 🔸 Customer Performance
+![Customer Performance](https://github.com/trinitarn/Regional_Sales_Analysis/blob/main/Screenshot%20Customer.png)
+
+
 ## 🔧 Tools & Skills Demonstrated
 Data Cleaning & Wrangling: Used Python (Pandas) to merge the innitial [dataset](https://github.com/trinitarn/Regional_Sales_Analysis/blob/main/Regional%20Sales%20Dataset.xlsx), clean keys, map references. You can see the code [here](https://github.com/trinitarn/Regional_Sales_Analysis/blob/main/Regional%20Sales%20Analysis.ipynb). 
 Business Intelligence: Designed KPI cards, dynamic filters, and drill-down visuals in Power BI.
